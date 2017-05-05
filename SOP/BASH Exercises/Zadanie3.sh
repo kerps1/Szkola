@@ -6,7 +6,8 @@ do
 	do 
 		echo -n " "
 	done
-	for ((s=0; s<((wiersz*2)-1)); s++)
-	echo -n "x"
+	for ((s=0; s<((wiersz*2)-1); s++))
+	do	
+		echo -n "x"
 	done
-	
+done	
