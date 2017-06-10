@@ -9,7 +9,7 @@ int minimum(int numbers[], int elementsCount);
 int maximum(int numbers[], int elementsCount);
 int sum(int numbers[], int elementsCount);
 
-typedef int (*operation)(int[], int elementsCount);
+typedef int (*operation)(int[], int);
 
 int forAll(int numbers[], int elementsCount, operation operation);
 
