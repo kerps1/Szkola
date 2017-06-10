@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1497106026 source:c:\users\uzytkownik\desktop\c++\make\zadanie2\main.cpp
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<conio.h>
+

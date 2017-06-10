@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1495320187 source:c:\users\uzytkownik\desktop\zadaniazio\main.cpp
+	<iostream>
+	<conio.h>
+	<fstream>
+
