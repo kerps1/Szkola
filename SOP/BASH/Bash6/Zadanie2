@@ -1,0 +1,4 @@
+#!/bin/bash
+
+wget -nd -r -P Grafika -A jpeg,jpg,bmp,gif,png https://pl.wikipedia.org/wiki/Grafika
+

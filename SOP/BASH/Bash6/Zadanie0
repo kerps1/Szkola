@@ -1,0 +1,11 @@
+#!/bin/bash
+
+function Paint {
+tekst=$1
+kolor=$2
+
+echo -e \\e["$tekst"m"$kolor"\\e[0m
+}
+
+Paint 18 Example
+Paint 12 Example1

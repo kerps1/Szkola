@@ -1,0 +1,53 @@
+#!/bin/bash
+
+sz=$1
+wy=$2
+tekst="$3"
+
+if [ ${#3} -gt $((sz-2)) ]; then
+sz=$((sz+(${#3})-sz+2))
+fi
+function linia { 
+for ((i=0; i<$1; i++)); do
+        echo -n "x"
+done
+echo ""
+}
+function pustalinia {
+echo -n "x"
+	for ((i=1; i<$(($1-1)); i++)); do
+      echo -n " "
+done
+echo "x"
+}
+function pisztekst {
+dl=${#2}
+x=$((($1-2-dl)/2))
+	echo -n "x"
+for ((i=0; i<$x; i++)); do
+        echo -n " "
+done
+	echo -n $2
+
+if [ $(((x*2)+2+dl)) -ne $1 ]; then
+x=$((x+1))
+fi
+
+for ((i=0; i<$x; i++)); do
+        echo -n " "
+done
+echo "x"
+
+}
+
+linia $sz
+for ((j=1; j<$((wy-1)); j++)); do
+        if [ $j -ne $((wy/2)) ]; then
+                pustalinia $sz
+        else
+                pisztekst $sz "$tekst"
+        fi
+done
+
+
+linia $sz
